@@ -1,0 +1,11 @@
+.navbar-light{
+    background-color: white;
+}
+
+.navbar-brand img{
+    height: 80px;
+}
+
+.hero{
+    background: url(img/home-background.jpg) center center;
+}
