@@ -12,7 +12,7 @@ class Comida {
 //Categorizo arrays
 const platos=[
     {
-        nombre:"Ensalad Mixta",
+        nombre:"Ensalada Mixta",
         referencia:"refA001",
         categoria: "Entrantes",
         precio: 6.90
@@ -61,6 +61,13 @@ console.table(platos.sort(precioDescendente));
 for(const precioProducto of platos){
     console.log("Precio: "+ precioProducto.precio);
 }
+
+platos.forEach(plato => console.log(plato.titulo));
+
+//filter
+//buscar los platos más caros
+const caros = platos.filter(plato => plato.precio > 9);//nuevo array
+console.log("los platos caros son " + caros);
 
 
 
